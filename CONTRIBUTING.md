@@ -29,6 +29,5 @@ By participating, you agree that all contributions to the Stenographer Project w
 
 [API_Guidelines]: https://swift.org/documentation/api-design-guidelines/
 [xcode_markup]: https://developer.apple.com/library/ios/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html
-[conduct]: https://github.com/logkit/logkit.github.io/blob/master/CONDUCT.md
-[SX_License]: https://github.com/logkit/logkit/blob/master/LICENSE.txt
+[SX_License]: https://github.com/stenographer/stenographer/blob/master/LICENSE
 [Wiki_ISC]: https://en.wikipedia.org/wiki/ISC_license

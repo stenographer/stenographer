@@ -1,9 +1,11 @@
 # Stenographer
 
-Stenographer is a logging framework built to be **simple** to get started with, **efficient** to execute, **safe** for shipping code, and **extensible** for flexibility. It is written in pure Swift and is suitable for OS X, iOS, tvOS, and watchOS application logging. For a developer looking for more power than `print()`, Stenographer takes just a moment to get started with, and comes ready to log to the console, a file, an HTTP service, or all three. Need to log to somewhere else? Defining your own Endpoint is easy too.
+Stenographer is a logging framework built to be **simple** to get started with, **efficient** to execute, **safe** for shipping code, and **extensible** for flexibility. It is written in pure Swift and is suitable for macOS, iOS, tvOS, and watchOS application logging. For a developer looking for more power than `print()`, Stenographer takes just a moment to get started with, and comes ready to log to the console, a file, an HTTP service, or all three. Need to log to somewhere else? Defining your own Endpoint is easy too.
+
+Stenographer is a fork of [LogKit](https://github.com/logkit/logkit).
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-
+[![CocoaPods](https://img.shields.io/badge/pod-1.0.0-blue.svg)](https://cocoapods.org/pods/stenographer)
 
 ## Contents
 
@@ -34,7 +36,7 @@ Stenographer is a logging framework built to be **simple** to get started with, 
 
 ## Requirements
 
-* Project targeting OS X 10.9+, iOS 7+, tvOS 9+, or watchOS 2+
+* Project targeting macOS 10.9+, iOS 7+, tvOS 9+, or watchOS 2+
 * Xcode 7.3 and Swift 2.2
 
 
@@ -46,7 +48,7 @@ There are a few ways to install Stenographer. Below are some tips, but for full 
 
 ### CocoaPods
 
-> Supports iOS 8+, OS X 10.9+, tvOS 9+, watchOS 2+
+> Supports iOS 8+, macOS 10.9+, tvOS 9+, watchOS 2+
 
 Include Stenographer in your Podfile:
 
@@ -59,7 +61,7 @@ For more information on getting started with CocoaPods, read the [guide][cocoapo
 
 ### Carthage
 
-> Supports iOS 8+, OS X 10.9+, tvOS 9+, watchOS 2+
+> Supports iOS 8+, macOS 10.9+, tvOS 9+, watchOS 2+
 
 Include Stenographer in your Cartfile:
 
@@ -71,13 +73,13 @@ For more information on getting started with Carthage, visit the [repo][carthage
 
 ### Embedded Framework
 
-> Supports iOS 8+, OS X 10.9+, tvOS 9+, watchOS 2+
+> Supports iOS 8+, macOS 10.9+, tvOS 9+, watchOS 2+
 
 Include `Stenographer.xcodeproj` within your project (second level, below your project root, as a sub-project). Select your target, and add Stenographer as an Embedded Binary in the General tab. Pick the appropriate Stenographer framework for your target’s OS. Be sure to select the framework, not the tests.
 
 ### Source
 
-> Supports iOS 7+, OS X 10.9+, tvOS 9+, watchOS 2+
+> Supports iOS 7+, macOS 10.9+, tvOS 9+, watchOS 2+
 >
 > Integrating the Stenographer source is the only way to include Stenographer in projects targeting iOS 7. When this installation method is used, skip the `import Stenographer`.
 
@@ -173,18 +175,8 @@ Stenographer welcomes contributions.
 
 Stenographer is licensed under the permissive [ISC License][license].
 
-
-[website]: http://www.logkit.info/
-[docs]: http://www.logkit.info/docs/2.3/
-[install]: http://www.logkit.info/docs/2.3/installation/
-[usage]: http://www.logkit.info/docs/2.3/usage/
-[endpoints]: http://www.logkit.info/docs/2.3/endpoints/
-[formatting]: http://www.logkit.info/docs/2.3/formatting/
-[migration]: http://www.logkit.info/docs/2.3/migration/
-
-[changelog]: https://github.com/logkit/logkit/blob/master/CHANGELOG.md
-[contrib]: https://github.com/logkit/logkit/blob/master/CONTRIBUTING.md
-[license]: https://github.com/logkit/logkit/blob/master/LICENSE.txt
+[changelog]: https://github.com/stenographer/stenographer/blob/master/CHANGELOG.md
+[license]: https://github.com/stenographer/stenographer/blob/master/LICENSE
 
 [cocoapods]: https://guides.cocoapods.org/using/using-cocoapods.html
 [carthage]: https://github.com/Carthage/Carthage
