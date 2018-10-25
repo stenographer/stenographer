@@ -123,11 +123,7 @@ private class SXAsynchronousConsoleWriter: SXConsoleWriter {
             DispatchData(bytesNoCopy: UnsafeRawBufferPointer(start: $0, count: data.count))
         })
 
-        if #available(OSXApplicationExtension 10.10, *) {
-            DispatchIO.write(toFileDescriptor: STDERR_FILENO, data: dispatchData, runningHandlerOn: SX_STENOGRAPHER_QUEUE, handler: { _, _ in })
-        } else {
-            // Fallback on earlier versions
-        }
+        DispatchIO.write(toFileDescriptor: STDERR_FILENO, data: dispatchData, runningHandlerOn: SX_STENOGRAPHER_QUEUE, handler: { _, _ in })
     }
 
 }

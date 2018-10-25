@@ -39,7 +39,7 @@ internal let SX_STENOGRAPHER_QUEUE: DispatchQueue = DispatchQueue.global(qos: Di
 /// The default log file directory; `Application Support/{bundleID}/logs/`.
 internal let SX_DEFAULT_LOG_DIRECTORY: URL? = {
     if let appSupportURL = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first {
-        let bundleID = Bundle.main.bundleIdentifier ?? "info.logkit.Stenographer"
+        let bundleID = Bundle.main.bundleIdentifier ?? "com.stenographer.Stenographer"
         return appSupportURL.appendingPathComponent(bundleID, isDirectory: true).appendingPathComponent("logs", isDirectory: true)
     } else {
         assertionFailure("Unable to build default log file URL from main bundle ID and Application Support directory")
@@ -135,7 +135,7 @@ internal let SX_DEVICE_IDS: (vendor: String, advertising: String) = {
         let advertisingID = ""
     #else
         let adManager = ASIdentifierManager.shared()
-        let advertisingID = (adManager?.isAdvertisingTrackingEnabled)! ? adManager?.advertisingIdentifier.uuidString : ""
+        let advertisingID = (adManager.isAdvertisingTrackingEnabled) ? adManager.advertisingIdentifier.uuidString : ""
     #endif
     return (vendorID, advertisingID)
 #else
