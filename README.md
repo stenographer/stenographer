@@ -37,8 +37,8 @@ Stenographer is a fork of [LogKit](https://github.com/logkit/logkit).
 
 ## Requirements
 
-* Project targeting macOS 10.9+, iOS 7+, tvOS 9+, or watchOS 2+
-* Xcode 7.3 and Swift 2.2
+* Project targeting macOS 10.10+, iOS 8+, tvOS 9+, or watchOS 2+
+* Xcode 10 and Swift 4.2
 
 
 ## Installation
@@ -55,7 +55,7 @@ Include Stenographer in your Podfile:
 
 ```ruby
 use_frameworks!
-pod 'Stenographer', '~> 2.3'
+pod 'Stenographer', '~> 1.0'
 ```
 
 For more information on getting started with CocoaPods, read the [guide][cocoapods].
@@ -67,20 +67,20 @@ For more information on getting started with CocoaPods, read the [guide][cocoapo
 Include Stenographer in your Cartfile:
 
 ```
-github "logkit/logkit" ~> 2.3
+github "stenographer/stenographer" ~> 1.0
 ```
 
 For more information on getting started with Carthage, visit the [repo][carthage].
 
 ### Embedded Framework
 
-> Supports iOS 8+, macOS 10.9+, tvOS 9+, watchOS 2+
+> Supports iOS 8+, macOS 10.10+, tvOS 9+, watchOS 2+
 
 Include `Stenographer.xcodeproj` within your project (second level, below your project root, as a sub-project). Select your target, and add Stenographer as an Embedded Binary in the General tab. Pick the appropriate Stenographer framework for your target’s OS. Be sure to select the framework, not the tests.
 
 ### Source
 
-> Supports iOS 7+, macOS 10.9+, tvOS 9+, watchOS 2+
+> Supports iOS 7+, macOS 10.10+, tvOS 9+, watchOS 2+
 >
 > Integrating the Stenographer source is the only way to include Stenographer in projects targeting iOS 7. When this installation method is used, skip the `import Stenographer`.
 
