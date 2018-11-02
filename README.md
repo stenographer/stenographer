@@ -4,6 +4,7 @@ Stenographer is a logging framework built to be **simple** to get started with, 
 
 Stenographer is a fork of [LogKit](https://github.com/logkit/logkit).
 
+[![Build Status](https://travis-ci.com/stenographer/stenographer.svg?branch=master)](https://travis-ci.com/stenographer/stenographer)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods](https://img.shields.io/badge/pod-1.0.0-blue.svg)](https://cocoapods.org/pods/stenographer)
 
