@@ -105,7 +105,7 @@ public struct SXLogEntry {
 internal extension SXLogEntry {
 
     /// Returns the Log Entry as a dictionary.
-    internal func asMap() -> [String: Any] {
+    func asMap() -> [String: Any] {
         return [
             "stenographerVersion": self.stenographerVersion,
             "message": self.message,

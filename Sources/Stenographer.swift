@@ -157,7 +157,7 @@ internal extension FileManager {
      *
      *  - throws: `NSError` with domain `NSURLErrorDomain`
      */
-    internal func ensureFile(at URL: Foundation.URL, createDirectories: Bool = true) throws {
+    func ensureFile(at URL: Foundation.URL, createDirectories: Bool = true) throws {
         assert(URL.isFileURL, "URL must be a file system URL")
         let dirPath = URL.deletingLastPathComponent().path
         let filePath = URL.path
@@ -189,7 +189,7 @@ internal extension Calendar {
      *
      *  Exists as a compatibility shim for older operating systems.
      */
-    internal func isDateSameAsToday(_ date: Date) -> Bool {
+    func isDateSameAsToday(_ date: Date) -> Bool {
         return self.isDateInToday(date)
     }
 }
